@@ -101,7 +101,7 @@
   line-height: normal;
 
   text-shadow: 0 0 2px var(--page-background-color, #fff);
-  inset-inline-end: 11px;
+  inset-inline-end: 25px;
   inset-block-start: 25px;
   mix-blend-mode: hard-light;
 }
@@ -216,6 +216,7 @@
 }
 
 .button__icon {
+  flex-shrink: 0;
   block-size: 21px;
   inline-size: 21px;
 }
@@ -240,7 +241,6 @@
 
 .modal[open] {
   display: grid;
-  grid-template-rows: repeat(2, min-content);
   gap: 30px;
 }
 
@@ -268,9 +268,18 @@
 /* Адаптивность */
 
 @media (width < 376px) {
+  .card__img-label {
+    inset-inline-end: 13px;
+  }
+
   .modal {
-    padding: 28px 40px;
-    max-inline-size: 340px;
+    padding: 30px 42px;
+    font-size: 14px;
+  }
+
+  .modal__content {
+    width: 257px;
+    height: 63px;
   }
 
   .button--save {
