@@ -237,6 +237,7 @@
   text-transform: uppercase;
   background: var(--page-background-color, #fff);
   max-inline-size: 355px;
+  font-size: 14px;
 }
 
 .modal[open] {
@@ -274,7 +275,6 @@
 
   .modal {
     padding: 30px 42px;
-    font-size: 14px;
   }
 
   .modal__content {
